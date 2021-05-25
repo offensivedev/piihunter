@@ -25,9 +25,9 @@ var regexRules = []regexRule {
 	regexRule {name: "pgpPrivateKey", displayName: "PGP Private Key", regex: regexp.MustCompile("(BEGIN PGP PRIVATE KEY)")},
 	regexRule {name: "secretKey0", displayName: "Secret Key", regex: regexp.MustCompile("(?i)(['\"]?secret_key['\"]? ?[:=] ?(['\"][^'\"]{4,}['\"]|[0-9a-z\\-_@#!%\\^\\?\\*&\\$~]{4,}))")},
 	regexRule {name: "secretKey1", displayName: "Secret Key", regex: regexp.MustCompile("(?i)(['\"]?secretkey['\"]? ?[:=] ?(['\"][^'\"]{4,}['\"]|[0-9a-z\\-_@#!%\\^\\?\\*&\\$~]{4,}))")},
-	regexRule {name: "secretKey2", displayName: "", regex: regexp.MustCompile("(?i)(['\"]?secret['\"]? ?[:=] ?(['\"][^'\"]{3,}['\"]|[0-9a-z\\-_@#!%\\^\\?\\*&\\$~]+))")},
+	regexRule {name: "secretKey2", displayName: "Secret Key", regex: regexp.MustCompile("(?i)(['\"]?secret['\"]? ?[:=] ?(['\"][^'\"]{3,}['\"]|[0-9a-z\\-_@#!%\\^\\?\\*&\\$~]+))")},
 	regexRule {name: "passphrase", displayName: "Passphrase", regex: regexp.MustCompile("(?i)(<[^(><.)]*passphrase[^(><.)]*>[^(><.)]+<\\/[^(><.)]*passphrase[^(><.)]*>)")},
-	regexRule {name: "mobilenumber0", displayName: "Mobile Number", regex: regexp.MustCompile("(\\+91|\\+91\\-|0)?\\d{10}")},
+	regexRule {name: "mobilenumber0", displayName: "Potential Mobile Number", regex: regexp.MustCompile("(\\+91|\\+91\\-|0)?\\d{10}")},
 	regexRule {name: "cardnumber", displayName: "Potential Credit/Debit Card", regex: regexp.MustCompile("(?:4[0-9]{12}(?:[0-9]{3})?|5[1-5][0-9]{14}|3[47][0-9]{13}|3(?:0[0-5]|[68][0-9])[0-9]{11}|6(?:011|5[0-9]{2})[0-9]{12}(?:2131|1800|35\\d{3})\\d{11})")},
 	regexRule {name: "zipcode", displayName: "Potential Zip Code", regex: regexp.MustCompile("\\b\\d{6}(?:[-\\s]\\d{4})?\\b")},
 }
