@@ -1,5 +1,5 @@
 # piihunter
-piihunter is an unencrypted data detection tool built to scan source code repositories for passwords, token, weak cryptography usage, private key voilations and lot more. It can also scan your codebase for unencrypted PII such as emails, phone numbers, addresses, zip codes, credit/debit card numbers etc. 
+piihunter is a sensitive unencrypted data detection tool built to scan source code repositories for passwords, token, weak cryptography usage, private key voilations and lot more. It can also scan your codebase for unencrypted PII such as emails, phone numbers, addresses, zip codes, credit/debit card numbers etc. 
 
 It can be used to scan remote git repositories or local directories. 
 
